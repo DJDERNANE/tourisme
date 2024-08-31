@@ -1,0 +1,16 @@
+.end-start{
+    height: 60vh;
+    background-image: url('./Home.png');
+    background-size: cover;
+    background-position: center;
+}
+.btn-reservation{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.hotel-pic{
+    height: 200px;
+    width: 300px;
+}

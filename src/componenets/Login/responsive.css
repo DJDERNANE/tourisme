@@ -1,0 +1,26 @@
+@media only screen and (max-width: 500px) {
+    .formulaire{
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact-info{
+        display: none;
+    }
+    .login-title p {
+        font-size: 12px;
+        width: 100%;
+    }
+    .login-input {
+        width: 100%;
+    }
+    .contact-on-left {
+        transform: translateX(0%) rotateY(360deg);
+        /* order: -1; Moves the contact section to the left */
+        transition: transform 01s ease;
+    }
+    .form-on-right{
+        transform: translateX(0%) rotateY(360deg);
+        /* order: -1; Moves the contact section to the left */
+        transition: transform 01s ease;
+    }
+}

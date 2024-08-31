@@ -1,0 +1,184 @@
+.login {
+    position: relative;
+}
+
+.decoration {
+    position: absolute;
+    top: 0;
+    height: 60vh;
+    width: 100%;
+    left: 0;
+    background-image: linear-gradient(var(--secondary-color) 70%, white);
+    /* background-color: var(--secondary-color); */
+    z-index: -1;
+}
+.formulaire{
+    height: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust gap between form and contact as needed */
+}
+.login-title p {
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+}
+
+:focus {
+    outline: none;
+}
+
+.login-input {
+    float: left;
+    width: 80%;
+    margin: 23px auto;
+    position: relative;
+}
+
+/* necessary to give position: relative to parent. */
+input {
+    color: #333;
+    font-size: 18px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.effect-17 {
+    border: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+   
+}
+
+.effect-17~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: 0.4s;
+}
+
+.effect-17:focus~.focus-border,
+.has-content.effect-17~.focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.effect-17~label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 9px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+    z-index: 1;
+    font-size: 18px;
+    height: 0%;
+}
+
+.effect-17:focus~label,
+.has-content.effect-17~label {
+    top: -20px;
+    font-size: 18px;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+.login h3{
+    color: var(--primary-color);
+    
+}
+.contact-info{
+    background-color: var(--primary-color);
+    height: max-content;
+}
+.signup-link{
+    font-size: 14px;
+}
+.signup-link a{
+    text-decoration: none;
+    color: #333;
+}
+.signup-link  span{
+    color: var(--primary-color);
+}
+.contact-on-left {
+    transform: translateX(-110%);
+    /* order: -1; Moves the contact section to the left */
+    transition: transform 01s ease;
+}
+.form-on-right{
+    transform: translateX(105%);
+    /* order: -1; Moves the contact section to the left */
+    transition: transform 01s ease;
+}
+.form-section {
+    flex-grow: 1;
+    transition: transform 0.5s ease;
+}
+.contact-section {
+    flex-grow: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 1; /* Fully visible by default */
+}
+.login-footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo span{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.privacy a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+.icon {
+    padding: 5px;
+    border-radius: 50%;
+
+    background-color: var(--primary-color);
+}
+.social{
+    display: flex;
+    gap: 15px;
+}
+.formulaire{
+    flex-direction: column;
+    width: 100%;
+}
+.contact-info{
+    display: none;
+}
+.login-title p {
+    font-size: 12px;
+    width: 100%;
+}
+.login-input {
+    width: 100%;
+}
+.contact-on-left {
+    transform: translateX(0%) rotateY(360deg);
+    /* order: -1; Moves the contact section to the left */
+    transition: transform 01s ease;
+}
+.form-on-right{
+    transform: translateX(0%) rotateY(360deg);
+    /* order: -1; Moves the contact section to the left */
+    transition: transform 01s ease;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

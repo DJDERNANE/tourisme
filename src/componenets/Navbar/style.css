@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+}
+.login-btn{
+    background-color: var(--primary-color);
+    padding: 4px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left:  0 !important;
+}   
+.login-btn > *{
+    color: white;
+}
+.navbar .logo span {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+ul li a, ul li button {
+    text-decoration: none;
+    margin-left: 13px;
+    padding: 8px;
+    font-weight: 500;
+    font-size: var(--nav-font-size-);
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.listbtn {
+    display: none;
+}
+.logo img{
+    width: 80px;
+    height: 70px;
+}

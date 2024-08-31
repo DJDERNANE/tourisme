@@ -1,0 +1,69 @@
+@media only screen and (max-width: 500px) {
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo img{
+        height: 50px;
+    }
+    .logo h1 {
+        font-size: 30px;
+    }
+
+    .listbtn {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 3px;
+    }
+
+    .listbtn.active span:nth-child(2) {
+        visibility: hidden;
+    }
+
+    .listbtn.active span:first-child,
+    .listbtn.active span:last-child {
+        transition: all 1s;
+    }
+
+    .listbtn.active span:first-child {
+        transform: rotate(45deg) translateY(11.5px);
+
+    }
+
+    .listbtn.active span:last-child {
+        transform: rotate(-45deg) translateY(-11.5px);
+
+    }
+
+    .listbtn span {
+        width: 35px;
+        height: 3px;
+        background-color: var(--primary-color);
+        border-radius: 3px;
+        margin: 3px;
+
+    }
+
+    .navbar ul {
+        position: absolute;
+        top: 70px;
+        flex-direction: column;
+        background-color: rgba(186, 251, 248, 0.8); /* Semi-transparent white background */
+        backdrop-filter: blur(10px); /* Apply a blur effect */
+        width: 90%;
+        height: 80vh;
+        justify-content: center;
+        border-radius: 20px;
+        transform: translateX(130%);
+        transition: all 0.5s;
+        padding: 0;
+    }
+    .navbar ul.active{
+        transform: translateX(0%);
+    }
+    .navbar ul.active li {
+       margin-bottom: 20px;
+    }
+}
